@@ -1,0 +1,73 @@
+:root {
+    --primary-color: #150af4;
+    --primary-color-darker: #08045b;
+    --secundary-color: #0759ff;
+    --dark-color: #000;
+    --light-color: #f4f4f4;
+    --shadow-color: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--secundary-color);
+    color: var(--dark-color);
+    font-size: 1.5rem;
+    line-height: 1.5em;
+}
+
+.container {
+    background: var(--light-color);
+    max-width: 600px;
+    margin: 5rem auto;
+    padding: 5rem 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow-color);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.input-tarefa {
+    width: 50%;
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+ul.tarefas {
+    list-style: none;
+    padding: 0;
+}
+
+ul.tarefas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+button {
+    background: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+button:hover {
+    background: var(--primary-color-darker);
+}
